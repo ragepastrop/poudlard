@@ -1,270 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Poudlard MC RP - Serveur Minecraft Harry Potter</title>
+  <meta charset="UTF-8">
+  <title>Poudlard - Serveur Minecraft</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Georgia', serif;
-      background: url('https://images.unsplash.com/photo-1501117716987-c8e1ecb5acaa?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: #f3eacb;
       margin: 0;
       padding: 0;
-    }
-    header {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 30px 0;
+      font-family: 'Cinzel Decorative', cursive;
+      background: url('https://wallpapercave.com/wp/wp9148603.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
       text-align: center;
-      border-bottom: 4px solid #cba135;
     }
-    header h1 {
-      margin: 0;
-      font-size: 3em;
-      color: #cba135;
-      text-shadow: 2px 2px 5px #000;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 60px 20px;
     }
-    nav {
-      background-color: rgba(20, 20, 20, 0.9);
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-      padding: 15px 0;
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+      animation: fadeInDown 2s ease;
     }
-    nav a {
-      color: #f3eacb;
+    p {
+      font-size: 1.5rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      animation: fadeIn 3s ease;
+    }
+    .btn {
+      background: #d4af37;
+      color: black;
+      padding: 15px 30px;
+      border-radius: 10px;
       text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-      transition: color 0.3s;
+      font-size: 1.2rem;
+      transition: 0.3s;
+      display: inline-block;
+      margin: 10px;
     }
-    nav a:hover {
-      color: #cba135;
+    .btn:hover {
+      background: #fff8dc;
     }
-    main {
-      max-width: 1100px;
-      margin: 30px auto;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 30px;
-      border-radius: 12px;
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    section {
-      margin-bottom: 40px;
-    }
-    h2 {
-      color: #cba135;
-      border-bottom: 2px solid #cba135;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-    }
-    .maisons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .maison {
-      flex: 1 1 200px;
-      background-color: rgba(20, 20, 20, 0.8);
-      padding: 15px;
-      border-radius: 8px;
-      border: 2px solid #cba135;
-      box-shadow: 0 0 10px #cba135;
-      transition: transform 0.3s;
-      text-align: center;
-    }
-    .maison:hover {
-      transform: scale(1.05);
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
     footer {
-      text-align: center;
-      background-color: rgba(20, 20, 20, 0.95);
-      color: #cba135;
-      padding: 20px;
-      border-top: 2px solid #cba135;
-    }
-    a.mail {
-      color: #f3eacb;
-    }
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-      .maisons {
-        flex-direction: column;
-      }
+      margin-top: 40px;
+      font-size: 0.9rem;
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <h1>⚡ Bienvenue à Poudlard ⚡</h1>
+    <p>Explore un monde magique inspiré de l’univers de Harry Potter, avec sorts, maisons, quêtes, métiers, et plus encore !</p>
 
-<header>
-  <h1>Poudlard MC RP</h1>
-</header>
+    <a href="reglement.html" class="btn">📜 Règlement</a>
+    <a href="liens.html" class="btn">🧭 Liens utiles</a>
+    <a href="https://discord.gg/TONDISCORD" class="btn" target="_blank">💬 Rejoindre le Discord</a>
+    <a href="https://minecraft-mp.com/serveur/TONSERVEUR" class="btn" target="_blank">📢 Voter</a>
 
-<nav>
-  <a href="#accueil">Accueil</a>
-  <a href="#quetes">Quêtes</a>
-  <a href="#magie">Système Magique</a>
-  <a href="#maisons">Maisons</a>
-  <a href="#staff">Staff</a>
-</nav>
-
-<main>
-
-  <section id="accueil">
-    <h2>Bienvenue sur le serveur Harry Potter Minecraft</h2>
-    <p>Plongez dans une aventure magique fidèle à l’univers des films. Rejoignez votre maison, lancez des sorts, vivez les cours, et relevez des quêtes uniques. Poudlard vous attend !</p>
-  </sec
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <title>Maisons de Poudlard</title>
-  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'MedievalSharp', cursive;
-      background: #0e0e0e;
-      color: #fff;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      font-size: 3rem;
-    }
-    .maison {
-      border: 2px solid #444;
-      margin: 20px auto;
-      max-width: 600px;
-      padding: 15px;
-      border-radius: 10px;
-      background: rgba(255,255,255,0.05);
-    }
-    h2 {
-      color: #f0c040;
-    }
-  </style>
-</head>
-<body>
-  <h1>Les Maisons de Poudlard</h1>
-
-  <div class="maison">
-    <h2>🦁 Gryffondor</h2>
-    <p>Les membres de Gryffondor sont courageux, audacieux et déterminés. Leur emblème est le lion et leurs couleurs sont le rouge et or.</p>
+    <footer>
+      © 2025 - Poudlard-MC-RP | Par Ragepastrop
+    </footer>
   </div>
-
-  <div class="maison">
-    <h2>🐍 Serpentard</h2>
-    <p>Ambitieux, rusés et malins. Leur emblème est le serpent, et leurs couleurs sont vert et argent.</p>
-  </div>
-
-  <div class="maison">
-    <h2>🦅 Serdaigle</h2>
-    <p>Intelligents, érudits et créatifs. Leur emblème est l’aigle, et leurs couleurs sont bleu et bronze.</p>
-  </div>
-
-  <div class="maison">
-    <h2>🦡 Poufsouffle</h2>
-    <p>Travailleurs, loyaux et justes. Leur emblème est le blaireau, et leurs couleurs sont jaune et noir.</p>
-  </div>
-
-  <p style="text-align:center; margin-top: 30px;"><a href="index.html" style="color:#ccc;">⬅ Retour à l'accueil</a></p>
-</body>
-</html><!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Règlement du serveur</title>
-  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'MedievalSharp', cursive;
-      background: #0e0e0e;
-      color: #fff;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      font-size: 2.5rem;
-    }
-    h2 {
-      color: #f0c040;
-      margin-top: 30px;
-    }
-    ul {
-      margin-left: 20px;
-    }
-    a {
-      color: #ccc;
-    }
-  </style>
-</head>
-<body>
-  <h1>Règlement du serveur</h1>
-
-  <h2>Comportement</h2>
-  <ul>
-    <li>Respect des autres joueurs et du staff</li>
-    <li>Pas d'insultes, menaces ou harcèlement</li>
-    <li>Pas de triche, cheat ou utilisation de bugs</li>
-  </ul>
-
-  <h2>Gameplay</h2>
-  <ul>
-    <li>Les sorts interdits sont autorisés mais surveillés</li>
-    <li>Pas de destruction volontaire de bâtiments RP</li>
-    <li>Respectez les événements et quêtes en cours</li>
-  </ul>
-
-  <h2>FAQ</h2>
-  <ul>
-    <li><strong>Q :</strong> Comment rejoindre une maison ?<br><strong>R :</strong> Via le Choixpeau magique au début du jeu.</li>
-    <li><strong>Q :</strong> Puis-je devenir professeur ?<br><strong>R :</strong> Oui, via une candidature ou une quête RP.</li>
-    <li><strong>Q :</strong> Où trouver le pack de ressources ?<br><strong>R :</strong> Dans la page <a href="liens.html">Liens utiles</a>.</li>
-  </ul>
-
-  <p style="text-align:center; margin-top: 30px;"><a href="index.html">⬅ Retour à l'accueil</a></p>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Liens utiles</title>
-  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'MedievalSharp', cursive;
-      background: #0e0e0e;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-    }
-    a {
-      color: #f0c040;
-      display: block;
-      margin: 15px 0;
-      font-size: 1.3rem;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-  <h1>Liens utiles</h1>
-
-  <a href="https://discord.gg/TON-LIEN">💬 Rejoindre notre Discord</a>
-  <a href="https://TON-SITE.com/dynmap">🗺️ Voir la Dynmap en ligne</a>
-  <a href="https://minecraft-mp.com/vote/TONSERVEUR">🔼 Voter pour le serveur</a>
-  <a href="https://drive.google.com/TONPACK.zip">📦 Télécharger le pack de ressources</a>
-  <a href="index.html">⬅ Retour à l'accueil</a>
-</body>
-</html>
-
-
