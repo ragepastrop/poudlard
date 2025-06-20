@@ -1,78 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Poudlard - Serveur Minecraft</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Cinzel Decorative', cursive;
-      background: url('https://wallpapercave.com/wp/wp9148603.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      text-align: center;
-    }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      min-height: 100vh;
-      padding: 60px 20px;
-    }
-    h1 {
-      font-size: 4rem;
-      margin-bottom: 10px;
-      animation: fadeInDown 2s ease;
-    }
-    p {
-      font-size: 1.5rem;
-      max-width: 700px;
-      margin: 0 auto 30px;
-      animation: fadeIn 3s ease;
-    }
-    .btn {
-      background: #d4af37;
-      color: black;
-      padding: 15px 30px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 1.2rem;
-      transition: 0.3s;
-      display: inline-block;
-      margin: 10px;
-    }
-    .btn:hover {
-      background: #fff8dc;
-    }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-50px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      opacity: 0.7;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Poudlard RP - Accueil</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="overlay">
-    <h1>⚡ Bienvenue à Poudlard ⚡</h1>
-    <p>Explore un monde magique inspiré de l’univers de Harry Potter, avec sorts, maisons, quêtes, métiers, et plus encore !</p>
+  <header>
+    <h1>Bienvenue à Poudlard</h1>
+    <p>Le serveur Minecraft RP magique</p>
+  </header>
 
-    <a href="reglement.html" class="btn">📜 Règlement</a>
-    <a href="liens.html" class="btn">🧭 Liens utiles</a>
-    <a href="https://discord.gg/monserveurdiscord" https://discord.gg/GrsDfTDpcM class="btn" target="_blank">💬 Rejoindre le Discord</a>
-    <a href="https://minecraft-mp.com/serveur/ ip du serveur91.197.6.190:25679" class="btn" target="_blank">📢 Voter</a>
+  <nav>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Maisons</a></li>
+      <li><a href="#">Sorts</a></li>
+      <li><a href="#">Connexion</a></li>
+    </ul>
+  </nav>
 
-    <footer>
-      © 2025 - Poudlard-MC-RP | Par Ragepastrop
-    </footer>
-  </div>
+  <main>
+    <section>
+      <h2>Explorez l’univers magique</h2>
+      <p>Rejoignez un monde inspiré de Harry Potter dans Minecraft. Suivez des cours, lancez des sorts, vivez des aventures.</p>
+    </section>
+    <img src="images/poudlard.jpg" alt="Château de Poudlard" />
+  </main>
+
+  <footer>
+    <p>© 2025 Poudlard-MC-RP | Site non officiel</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
